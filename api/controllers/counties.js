@@ -80,7 +80,7 @@ var indicatorXlsxLoad = function(indicatorName, xlsxFilename, callback) {
 				};
 
 				var indicatorValue = function(cellContent) {
-					return (isNaN(cellContent) || cellContent.trim() === "") ? -1 : cellContent;
+					return (isNaN(cellContent) || cellContent.trim() === "") ? -1 : parseFloat(cellContent).toFixed(2);
 				};
 				var indicators = [];
 				for(var x=0; x <= 9; x++) {
