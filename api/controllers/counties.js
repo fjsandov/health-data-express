@@ -45,7 +45,7 @@ exports.updateDatabase = function(request, response) {
 	The first two rows are headers and then the data is structured by column index of each cell in the way explained in the next paragraph:
 
 	0: State
-	1: FIPS Codes
+	1: FIPS Code
 	2: County
 
 	then 7 indicators per year ordered this way:
